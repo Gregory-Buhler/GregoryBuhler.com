@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>%TITLE%</title>
+    <!--build:js js/main.min.js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--endbuild-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="../css/normalize.css">
@@ -28,9 +32,9 @@
           <!-- Get the nav links -->
           <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="../index.php">Work</a></li>
+              <li><a href="../about.php">About</a></li>
+              <li><a href="../contact.php">Contact</a></li>
               <li><a href="http://gregorybuhler.com" class="blogLink" target="_blank" rel="noopener noreferrer">Blog</a></li>
             </ul>
           </div>

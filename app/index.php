@@ -8,7 +8,7 @@
   </div>
 
   <!-- Phone only -->
-  <div class="container-fluid visible-xs workPhone">
+  <div class="container-fluid visible-xs workPhone body">
     <div id="gregorybuhler" class="workExample">
       <div class="expand">GregoryBuhler.com</div>
       <div class="expandable">
@@ -24,6 +24,27 @@
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function() {
+      // Hide all but the first work example
+      $(".expandable").each(function(i) {
+        if( i > 0 ) {
+          $(this).slideUp('slow');
+        }
+      })
+      // This will open the chosen work example while closing all others
+      $(".expand").click(function() {
+        var id = $(this).parent().attr('id');
+        $(".expandable").each(function() {
+          if($(this).parent().attr('id') == id) {
+            $(this).slideDown('slow');
+          } else {
+            $(this).slideUp('slow');
+          }
+        });
+      });
+    });
+  </script>
 <?php
 include('partials/footer.php');
 ?>

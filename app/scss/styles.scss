@@ -5,6 +5,14 @@ $cream: #FFF8E8;
 $brown: #BFACAA;
 
 /* Bootstrap Edits */
+.alert {
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 4000;
+  display: none;
+  width: 100%;
+  top: 52px;
+}
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -18,77 +26,98 @@ $brown: #BFACAA;
 .navbar-toggle {
   background: $cream;
   margin-top: 5px;
-  margin-right: 20px;
+  margin-right: 0;
   &:hover {
     background-color: darken( $cream, 10% );
   }
 }
 
-nav {
-  &.navbar {
-    margin-bottom: 0;
-  }
-  .navbar-header {
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
-  &.navbar-default {
-    background-color: transparent;
-    border: none;
-    .navbar-collapse {
-      background-color: $blue;
-      border: none;
-      ul {
-        margin-top: 0;
+    z-index: 3000;
+    nav {
+      &.navbar {
         margin-bottom: 0;
-        li {
-          text-align: center;
-          font-size: 24px;
-          border-top: $red 1px solid;
-          border-bottom: $red 1px solid;
-          &:last-child {
-            border-bottom: $red 2px solid;
-          }
-          &:hover {
-            background-color: lighten($blue, 10%);
-          }
-          a {
-            color: $cream;
-            &:hover {
-              color: $cream;
+      }
+      .navbar-header {
+        width: 100%;
+      }
+      &.navbar-default {
+        background-color: transparent;
+        border: none;
+        .navbar-collapse {
+          background-color: $blue;
+          border: none;
+          margin-right: 0px;
+          margin-left: 0px;
+          position: fixed;
+          width: 100%;
+          top: auto;
+          left: auto;
+          z-index: 3000;
+          ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            li {
+              text-align: center;
+              font-size: 24px;
+              border-top: $red 1px solid;
+              border-bottom: $red 1px solid;
+              &:last-child {
+                border-bottom: $red 2px solid;
+              }
+              &:hover {
+                background-color: lighten($blue, 10%);
+              }
+              a {
+                color: $cream;
+                &:hover {
+                  color: $cream;
+                }
+              }
             }
           }
         }
       }
     }
-  }
-  @media (min-width: 768px) {
-    &.navbar-default {
-      background-color: transparent;
-      border: none;
-      .navbar-collapse {
+    @media (min-width: 768px) {
+      &.navbar-default {
         background-color: transparent;
         border: none;
-        ul {
-          margin-top: 0;
-          margin-bottom: 0;
-          li {
-            &:hover {
-              background-color: transparent;
-            }
-            a {
-              background-color: $cream;
-              border-radius: 5px;
-              margin-top: 5px;
-              margin-right: 5px;
-              padding: 10px;
-              color: $blue;
+        .navbar-collapse {
+          background-color: transparent;
+          border: none;
+          ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            li {
               &:hover {
-                background-color: darken( $cream, 10% );
+                background-color: transparent;
               }
-              &.blogLink {
-                background-color: $brown;
+              a {
+                background-color: $cream;
+                border-radius: 5px;
+                margin-top: 5px;
+                margin-right: 5px;
+                padding: 10px;
+                color: $blue;
                 &:hover {
-                  background-color: darken( $brown, 10% );
+                  background-color: darken( $cream, 10% );
+                }
+                &.blogLink {
+                  background-color: $brown;
+                  &:hover {
+                    background-color: darken( $brown, 10% );
+                  }
                 }
               }
             }
@@ -106,11 +135,28 @@ body, html {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body > div {
   min-height: 100%;
   position: relative;
+}
+
+form {
+  margin-top: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+label {
+  font-weight: normal;
 }
 
 #main {
@@ -133,7 +179,15 @@ footer {
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.56);
 }
 
+.aboutMeLinks {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .body {
+  @media (max-width: 767px) {
+    padding-top: 52px;
+  }
   padding-bottom: 60px;
 }
 
@@ -144,6 +198,47 @@ footer {
   border-top: $blue solid 1px;
   padding: 5px;
   cursor: pointer;
+}
+
+.img-me {
+  margin: 10px;
+  float: right;
+  display: block;
+  width: 143px;
+  box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+/* Phone specific code */
+.contactPhone {
+  .contactButton {
+    background-color: $blue;
+    color: $cream;
+    text-align: center;
+    margin: 0 auto 10px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  label {
+    margin: 0;
+  }
+}
+
+.phoneAbout {
+  p {
+    margin-left: 10px;
+  }
+  ul {
+    padding-left: 25px;
+    li {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .workExample {
