@@ -45,7 +45,7 @@
        <label> Call Me:</label>
        <a class="contactButton" href="tel:5879861869">(587) 986-1869</a>
        <label>Email Me:</label>
-       <a class="contactButton" href="mailto:Gregory@GregoryBuhler.com" target="_blank" rel="nofollow noreferrer">Gregory@GregoryBuhler.com</a>
+       <a class="contactButton" href="mailto:Gregory@GregoryBuhler.com" rel="nofollow noreferrer">Gregory@GregoryBuhler.com</a>
        <form name="contactForm" action="contact.php" onsubmit="return validateForm();" method="post">
          <label>Send a Message</label>
          <div class="form-group">

@@ -19,7 +19,7 @@
       <li>To my many times with many companies creating and updating manuals so that my coworkers would be able to pick up a new position without hassle.</li>
     </ul>
     <div class="aboutMeLinks">
-      <a href="resume.pdf" target="_blank" rel="nofollow noreferrer"><< Résumé >></a>
+      <a href="resume.pdf" rel="nofollow noreferrer"><< Résumé >></a>
     </div>
   </div>
  <?php
