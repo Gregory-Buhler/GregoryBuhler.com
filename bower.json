@@ -1,0 +1,27 @@
+{
+  "name": "gregorybuhler.com",
+  "description": "GregoryBuhler.com's opensource code for the website creation and setup.",
+  "main": "index.js",
+  "authors": [
+    "Gregory Buhler"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Gregory",
+    "Buhler",
+    "Portfolio",
+    "Website"
+  ],
+  "homepage": "https://github.com/Gregory-Buhler/GregoryBuhler.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
