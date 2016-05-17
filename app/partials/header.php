@@ -7,12 +7,12 @@
     <script src="../js/bootstrap.js"></script>
     <!--endbuild-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body>
@@ -26,7 +26,7 @@
               Menu
             </button>
             <a class="navbar-brand" href="#">
-              GB Website Design
+              <img id="brand" src="../images/logo/logo.png" alt="Gregory Buhler Website Design branding image">
             </a>
           </div>
 

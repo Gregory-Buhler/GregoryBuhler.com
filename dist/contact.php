@@ -10,10 +10,10 @@
     }
 
     $myemail  = "Gregory@GregoryBuhler.com";
-    $name     = filter_var(check_input($_POST["name"]), FILTER_SANITIZE_EMAIL);
+    $name     = filter_var(check_input($_POST["name"]), FILTER_SANITIZE_STRING);
     $email    = filter_var(check_input($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $subject  = "Email From GregoryBuhler.com";
-    $message  = filter_var(check_input($_POST["message"]), FILTER_SANITIZE_EMAIL);
+    $message  = filter_var(check_input($_POST["message"]), FILTER_SANITIZE_STRING);
 
     $str = "
     Name: $name
@@ -66,6 +66,7 @@
   </div>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
+      <p>I will return any messages received within 48 hours of it being sent. If for some strange reason I have not done so, please send a second email or feel free to either text or call my number listed above and to the left. Have a great day!</p>
     </div>
   </div>
 
