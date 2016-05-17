@@ -3,7 +3,7 @@
   echo getHeader('My Work');
  ?>
  <!-- Larger than phone -->
-  <div class="container-fluid workDesktop hidden-xs body">
+  <div class="container-fluid hidden-xs body">
     <div id="workHolder">
       <div id="GregoryBuhlerHero" class="workHero active">
         <h1>GregoryBuhler.com</h1>

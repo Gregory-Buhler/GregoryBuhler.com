@@ -182,6 +182,29 @@ label {
   background-color: $red;
 }
 
+#pictureChanger {
+  margin-top: 5px;
+  position: relative;
+  img {
+    width: 100%;
+    border: 20px solid white;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12000;
+    &.active {
+      z-index: 12001;
+    }
+  }
+  @for $i from 0 through 1 {
+    #image#{$i + 1} {
+      transform: rotate(#{($i * 3)%4}deg);
+    }
+  }
+
+}
+
 #workHolder {
   margin-top: 60px;
   position:relative;
@@ -255,10 +278,15 @@ label {
 }
 
 .body {
+  max-width: 970px;
   @media (max-width: 767px) {
     padding-top: 52px;
   }
   padding-bottom: 60px;
+}
+
+.desktopAbout {
+  margin-top: 110px;
 }
 
 .expand {
@@ -276,10 +304,6 @@ label {
   display: block;
   width: 143px;
   box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.5);
-}
-
-.workDesktop {
-  max-width: 970px;
 }
 
 

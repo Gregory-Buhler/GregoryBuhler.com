@@ -139,6 +139,24 @@ label {
       height: 130px;
       background-color: transparent; } }
 
+#pictureChanger {
+  margin-top: 5px;
+  position: relative; }
+  #pictureChanger img {
+    width: 100%;
+    border: 20px solid white;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12000; }
+    #pictureChanger img.active {
+      z-index: 12001; }
+  #pictureChanger #image1 {
+    transform: rotate(0deg); }
+  #pictureChanger #image2 {
+    transform: rotate(3deg); }
+
 #workHolder {
   margin-top: 60px;
   position: relative; }
@@ -198,10 +216,14 @@ label {
   text-align: center; }
 
 .body {
+  max-width: 970px;
   padding-bottom: 60px; }
   @media (max-width: 767px) {
     .body {
       padding-top: 52px; } }
+
+.desktopAbout {
+  margin-top: 110px; }
 
 .expand {
   background-color: #7D1935;
@@ -217,9 +239,6 @@ label {
   display: block;
   width: 143px;
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.5); }
-
-.workDesktop {
-  max-width: 970px; }
 
 /* Phone specific code */
 .contactPhone .contactButton {
