@@ -36,6 +36,40 @@
  ?>
  <div id="alert" class="alert">
  </div>
+<!-- Desktop Only -->
+<div class="container-fluid hidden-xs desktop body">
+  <h2>Contact Me</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <label> Call Me:</label>
+      <a class="contactButton" href="tel:5879861869">(587) 986-1869</a>
+      <label>Email Me:</label>
+      <a class="contactButton" href="mailto:Gregory@GregoryBuhler.com" rel="nofollow noreferrer">Gregory@GregoryBuhler.com</a>
+    </div>
+    <div class="col-sm-6 col-sm-offset-2">
+      <form name="contactForm" action="contact.php" onsubmit="return validateForm();" method="post">
+        <div class="form-group">
+          <label>Name:</label>
+          <input id="name" name="name" type="text" placeholder="Name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input id="email" name="email" type="email" placeholder="Email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Message:</label>
+          <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+        </div>
+        <button class="btn contactButton" type="submit" required>Send the Message</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+    </div>
+  </div>
+
+</div>
 
  <!-- Phone only -->
  <div class="container-fluid visible-xs contactPhone body">
@@ -46,7 +80,7 @@
        <a class="contactButton" href="tel:5879861869">(587) 986-1869</a>
        <label>Email Me:</label>
        <a class="contactButton" href="mailto:Gregory@GregoryBuhler.com" rel="nofollow noreferrer">Gregory@GregoryBuhler.com</a>
-       <form name="contactForm" action="contact.php" onsubmit="return validateForm();" method="post">
+       <form name="contactFormPhone" action="contact.php" onsubmit="return validateForm();" method="post">
          <label>Send a Message</label>
          <div class="form-group">
            <label>Name:</label>

@@ -2,7 +2,7 @@
 .alert {
   margin-bottom: 0;
   position: fixed;
-  z-index: 4000;
+  z-index: 16000;
   display: none;
   width: 100%;
   top: 52px; }
@@ -222,7 +222,21 @@ label {
     .body {
       padding-top: 52px; } }
 
-.desktopAbout {
+.contactButton {
+  background-color: #394558;
+  color: #FFF8E8;
+  text-align: center;
+  margin: 0 auto 10px;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%; }
+  .contactButton:hover {
+    text-decoration: underline;
+    color: #FFF8E8;
+    background-color: #4d5d77; }
+
+.desktop {
   margin-top: 110px; }
 
 .expand {
@@ -241,18 +255,6 @@ label {
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.5); }
 
 /* Phone specific code */
-.contactPhone .contactButton {
-  background-color: #394558;
-  color: #FFF8E8;
-  text-align: center;
-  margin: 0 auto 10px;
-  display: block;
-  padding: 5px 10px;
-  border-radius: 5px;
-  width: 100%; }
-  .contactPhone .contactButton:hover {
-    text-decoration: underline; }
-
 .contactPhone label {
   margin: 0; }
 

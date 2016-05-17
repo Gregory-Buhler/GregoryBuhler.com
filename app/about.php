@@ -3,7 +3,7 @@
   echo getHeader('About Me');
  ?>
  <!-- Larger than phone -->
-  <div class="container-fluid hidden-xs desktopAbout body">
+  <div class="container-fluid hidden-xs desktop body">
     <h2>A Little About Me</h2>
     <div class="row">
       <div class="col-sm-12">

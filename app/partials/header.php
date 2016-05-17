@@ -36,7 +36,7 @@
               <li><a href="../index.php">Work</a></li>
               <li><a href="../about.php">About</a></li>
               <li><a href="../contact.php">Contact</a></li>
-              <li><a href="http://gregorybuhler.com" class="blogLink" target="_blank" rel="noopener noreferrer">Blog</a></li>
+              <li><a href="../blog/" class="blogLink" target="_blank" rel="noopener noreferrer">Blog</a></li>
             </ul>
           </div>
         </div>
