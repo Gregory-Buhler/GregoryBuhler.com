@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-5 listMe">
+      <div class="col-sm-5">
         <p>The bonus of this feature, is that it translates to my work:</p>
         <ul>
           <li>Working as a contractor with constant communication between my client and myself to ensure a working product that fit their needs.</li>
@@ -61,13 +61,6 @@
     $(document).ready(function() {
       var images = []; // Set up array to hold image ids
       var imagesCurrent = 0; // Counter for images
-      $("#pictureChanger").height($("#image1").height() + 50);
-      setTimeout(function() {
-        $("#pictureChanger").height($("#image1").height() + 50);
-      }, 1);
-      $(window).resize(function() {
-        $("#pictureChanger").height($("#image1").height() + 50);
-      });
       $(".gregImage").each(function(i) {
         images.push("image" + (i+1)); // Run through images and put into the array
       }); // end gregImage.each

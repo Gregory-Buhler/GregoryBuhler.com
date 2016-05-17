@@ -57,6 +57,14 @@ gulp.task('connect', function() {
   })
 });
 
+gulp.task('connect:dist', function() {
+  connect.server({
+    base: 'dist',
+    port: 8010,
+    keepalive: true
+  })
+});
+
 gulp.task('sass', function() {
   return gulp.src(['app/scss/**/*.scss', 'bower_components/font-awesome/scss/font-awesome.scss']) // Get all the files ending in scss
     .pipe(sass()) // This calls gulp-sass
@@ -77,8 +85,20 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
   gulp.watch('app/**/*.php', browserSync.reload);
 });
 
+
+
 // Set up browser-sync
 gulp.task('browserSync', ['connect'], function() {
+  browserSync.init({
+    proxy: '127.0.0.1:8010',
+    port: 8080,
+    open: true,
+    notify: false
+  })
+});
+
+// check the distribution files
+gulp.task('run:dist', ['connect:dist'], function() {
   browserSync.init({
     proxy: '127.0.0.1:8010',
     port: 8080,

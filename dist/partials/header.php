@@ -2,18 +2,9 @@
 <html>
   <head>
     <title>%TITLE%</title>
-    <!--build:js js/main.min.js-->
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <!--endbuild-->
+    <script src="../js/main.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--build:css css/styles.min.css-->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
-    <!-- endbuild -->
+    <link rel="stylesheet" href="../css/styles.min.css">
   </head>
   <body>
     <div class="container-fluid">
